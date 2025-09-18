@@ -9,6 +9,40 @@ toc_sticky: true
 classes: resume-page
 ---
 
+<!-- 顶部地球（实纹理） -->
+<div id="earthGlobe" class="resume-hero"></div>
+
+<!-- Globe.gl 是 three-globe 的封装，内置 three.js -->
+<script src="https://unpkg.com/globe.gl@^2.34/dist/globe.gl.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.getElementById('earthGlobe');
+  if (!el) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) { el.style.display = 'none'; return; }
+
+  const world = Globe({ animate: true })(el)
+    // 纹理资源用示例地址，生产建议放到你仓库的 /assets/images 下
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+    .backgroundColor('rgba(0,0,0,1)');
+
+  world.controls().autoRotate = true;
+  world.controls().autoRotateSpeed = 0.8;
+  world.pointOfView({ altitude: 2.2 }, 2000); // 初始视角
+});
+</script>
+
+<style>
+/* 复用与上面一致的容器样式 */
+.resume-hero{ width:100%; height: 420px; margin: -10px 0 24px; border-radius: 12px; overflow: hidden; }
+@media (max-width: 600px){ .resume-hero{ height: 300px; } }
+</style>
+
+
+
 
 ## 基本信息
 - 姓名：吴本铉（Wu Benxuan）
