@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
 - 手机：180-0754-0254
 - 邮箱：wubx36@mail2.sysu.edu.cn（学邮） | 2120193209@qq.com
 - 就读：中山大学 · 遥感科学与技术学院（本科）
-- 方向：深度学习 | AI 交叉 | 遥感 | GIS | 软件产品
 
 ---
 
