@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 github_username: Ender2002hub
 minimal_mistakes_skin: default
 search: true
-
+baseurl: ""                
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
