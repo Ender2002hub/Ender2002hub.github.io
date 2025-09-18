@@ -42,28 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-<style>
-/* ======== Full-bleed 横幅：跨出版心，居中到屏幕中线 ======== */
-.resume-page .resume-hero{
-  width: 100vw;                           /* 占满视口宽度 */
-  height: 460px;
-  margin-left: calc(50% - 50vw);          /* 左右各溢出一半，实现 full-bleed */
-  margin-right: calc(50% - 50vw);
-  margin-top: -10px;
-  margin-bottom: 24px;
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden;                        /* 避免水平滚动条 */
-  border-radius: 0;                        /* 想要圆角可改 12px */
-}
-/* 防止因 full-bleed 产生的横向滚动 */
-.resume-page { overflow-x: hidden; }
-
-@media (max-width: 600px){
-  .resume-page .resume-hero{ height: 320px; }
-}
-</style>
-
-
 
 ## 基本信息
 - 姓名：吴本铉（Wu Benxuan）
