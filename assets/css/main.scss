@@ -76,3 +76,21 @@
 .resume-page .fz-94 { font-size: 0.84rem; }
 .resume-page .fz-100 { font-size: 0.90rem; }
 .resume-page .tight li { margin: .15em 0; }  /* 列表更紧凑 */
+
+/* 让地球横幅占满整个视口宽度，并保证在屏幕中线居中 */
+.resume-page .resume-hero{
+  width: 100vw;                              /* 视口宽 */
+  height: 460px;
+  margin-left: calc(50% - 50vw);             /* 左右各溢出一半，实现 full-bleed */
+  margin-right:  calc(50% - 50vw);
+  margin-top: -10px;
+  margin-bottom: 24px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 0;                           /* full 宽通常不需要圆角，想保留可改回 12px */
+  overflow: hidden;
+}
+.resume-page .resume-hero canvas,
+.resume-page .resume-hero > div{ display:block !important; margin:0 auto !important; }
+
+@media (max-width: 600px){ .resume-page .resume-hero{ height: 320px; } }
+
