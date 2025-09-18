@@ -17,6 +17,7 @@ classes: resume-page
 - 邮箱：wubx36@mail2.sysu.edu.cn（学邮） | 2120193209@qq.com
 - 就读：中山大学 · 遥感科学与技术学院（本科）
 - 方向：深度学习 | AI 交叉 | 遥感 | GIS | 软件产品
+
 ---
 
 ## 教育背景
