@@ -1,6 +1,6 @@
 main:
   - title: "主页"
-    url: /posts/
+    url: /resume/
   - title: "科研"
     url: /categories/
   - title: "实习"
