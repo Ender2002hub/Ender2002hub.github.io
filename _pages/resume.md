@@ -105,26 +105,4 @@ GPA：3.6/4.0（专业前 30%）
 
 ---
 
-## 技能清单
-- **编程**：Python、Java、C++、C、Matlab  
-- **遥感/GIS**：ArcGIS、QGIS、ENVI/ENVI Classic、SuperMap、SNAP、AutoCAD、CloudCompare  
-- **数据/分析**：数据库与 SQL，SPSS/Matlab
-- **产品与办公**：WPS/Word/Excel/PowerPoint、Visio、Markdown  
-- **模型与工具**：深度学习（训练/部署/迁移），熟悉 ChatGPT 与 Prompt 设计  
-- **创意与多媒体**：Photoshop、Procreate、剪映、可画（插画/视频）  
-- **运营与影响力**：短视频平台规则与投放，个人抖音累计 **350W+** 播放、**16W+** 点赞  
-- **无人机**：组装、航线规划与实操
-
----
-
-## 荣誉与证书
-- 大学英语 **四/六级**、**雅思 6**  
-- 中山大学 **专项奖学金·道德风尚奖**；**三等奖学金**  
-- **MathorCup 2024** 数学应用挑战赛（华南赛区）**二等奖**  
-- 中山大学 **一星级志愿者**  
-- **软件著作权**：  
-  - 《遥感场景“对象-关系”三元组标注工具（GeoSceneGraph Annotator）V1.0》 
-  - 《北极冰区最优航线多尺度智能规划系统 V1.0》
-
----
 
