@@ -1,39 +1,5 @@
 ---
 
-<!-- 顶部地球（实纹理） -->
-<div id="earthGlobe" class="resume-hero"></div>
-
-<!-- Globe.gl 是 three-globe 的封装，内置 three.js -->
-<script src="https://unpkg.com/globe.gl@^2.34/dist/globe.gl.min.js"></script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const el = document.getElementById('earthGlobe');
-  if (!el) return;
-
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduceMotion) { el.style.display = 'none'; return; }
-
-  const world = Globe({ animate: true })(el)
-    // 纹理资源用示例地址，生产建议放到你仓库的 /assets/images 下
-    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
-    .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
-    .backgroundColor('rgba(0,0,0,1)');
-
-  world.controls().autoRotate = true;
-  world.controls().autoRotateSpeed = 0.8;
-  world.pointOfView({ altitude: 2.2 }, 2000); // 初始视角
-});
-</script>
-
-<style>
-/* 复用与上面一致的容器样式 */
-.resume-hero{ width:100%; height: 420px; margin: -10px 0 24px; border-radius: 12px; overflow: hidden; }
-@media (max-width: 600px){ .resume-hero{ height: 300px; } }
-</style>
-
----
-
 layout: single
 title: 个人简历
 permalink: /
@@ -44,6 +10,60 @@ toc_sticky: true
 classes: resume-page
 
 ---
+
+<!-- 顶部地球（Globe.gl，整屏宽 full-bleed 横幅） -->
+<div id="earthGlobe" class="resume-hero"></div>
+
+<!-- Globe.gl（内置 three.js） -->
+<script src="https://unpkg.com/globe.gl@^2.34/dist/globe.gl.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const el = document.getElementById('earthGlobe');
+  if (!el) return;
+
+  // 尊重“减少动态效果”的系统偏好
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) { el.style.display = 'none'; return; }
+
+  const world = Globe({ animate: true, waitForGlobeReady: true })(el)
+    // 纹理：先用示例 CDN，之后可换成本地 /assets/images/ 下的图片
+    .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+    .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+    .backgroundColor('rgba(0,0,0,1)');
+
+  world.controls().autoRotate = true;
+  world.controls().autoRotateSpeed = 0.8;
+  world.pointOfView({ altitude: 2.0 }, 2000);
+
+  // 根据容器大小自适应
+  const resize = () => world.width(el.offsetWidth).height(el.offsetHeight);
+  resize(); window.addEventListener('resize', resize);
+});
+</script>
+
+<style>
+/* ======== Full-bleed 横幅：跨出版心，居中到屏幕中线 ======== */
+.resume-page .resume-hero{
+  width: 100vw;                           /* 占满视口宽度 */
+  height: 460px;
+  margin-left: calc(50% - 50vw);          /* 左右各溢出一半，实现 full-bleed */
+  margin-right: calc(50% - 50vw);
+  margin-top: -10px;
+  margin-bottom: 24px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;                        /* 避免水平滚动条 */
+  border-radius: 0;                        /* 想要圆角可改 12px */
+}
+/* 防止因 full-bleed 产生的横向滚动 */
+.resume-page { overflow-x: hidden; }
+
+@media (max-width: 600px){
+  .resume-page .resume-hero{ height: 320px; }
+}
+</style>
+
+
 
 ## 基本信息
 - 姓名：吴本铉（Wu Benxuan）
