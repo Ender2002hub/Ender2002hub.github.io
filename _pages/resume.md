@@ -5,6 +5,7 @@ permalink: /
 author_profile: true
 toc: true
 toc_sticky: true
+classes: resume-page
 ---
 
 
