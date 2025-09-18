@@ -57,7 +57,7 @@ plugins:
 author:
   name   : "吴本铉 | Wu Benxuan"
   avatar : "/assets/images/证件照-白底.jpg"
-  bio    : "深度学习 | AI交叉 | 遥感 | GIS | 软件产品"
+  bio    : "深度学习|AI交叉|遥感|GIS|软件产品"
   links:
     - label: "CSDN"
       icon: "fas fa-fw fa-link"
