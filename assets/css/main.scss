@@ -1,0 +1,16 @@
+---
+---
+
+/* 先引入主题样式（必须在你自定义样式之前） */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* 只让“简历页”变小：你的 resume.md 顶部需有 classes: resume-page */
+.resume-page .page__content {
+  font-size: 0.9375rem;  /* ≈15px，可改 0.9rem≈14.4px 或 1rem≈16px */
+  line-height: 1.7;
+}
+.resume-page .page__content h1 { font-size: 1.6rem; }
+.resume-page .page__content h2 { font-size: 1.25rem; }
+.resume-page .page__content h3 { font-size: 1.1rem; }
+.resume-page .page__content li { margin: .2em 0; } /* 可选，列表更紧凑 */
