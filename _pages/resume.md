@@ -1,13 +1,4 @@
 ---
-layout: single
-title: 个人简历
-permalink: /
-author_profile: true
-toc: true
-toc_label: "目录"
-toc_sticky: true
-classes: resume-page
----
 
 <!-- 顶部地球（实纹理） -->
 <div id="earthGlobe" class="resume-hero"></div>
@@ -41,8 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
 @media (max-width: 600px){ .resume-hero{ height: 300px; } }
 </style>
 
+---
 
+layout: single
+title: 个人简历
+permalink: /
+author_profile: true
+toc: true
+toc_label: "目录"
+toc_sticky: true
+classes: resume-page
 
+---
 
 ## 基本信息
 - 姓名：吴本铉（Wu Benxuan）
