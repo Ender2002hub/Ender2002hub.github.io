@@ -16,11 +16,8 @@
 title: 个人
 email: wubx36@mail2.sysu.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  中山大学遥感科学与技术学院 本科生
+github_username: Ender2002hub
 minimal_mistakes_skin: default
 search: true
 
@@ -32,7 +29,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+locale: zh-CN
 include:
   - _pages
 
@@ -58,34 +55,27 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "吴 本铉"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "吴本铉 | Wu Benxuan"
+  avatar : "/assets/images/证件照-白底.jpg"
+  bio    : "深度学习 | AI交叉 | 遥感 | GIS | 软件产品"
   links:
-    - label: "Website"
+    - label: "CSDN"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://blog.csdn.net/m0_74353785?spm=1000.2115.3001.5343"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Ender2002hub"
+   
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "CSDN"
+      icon: "fab fa-fw fa-CSDN-square"
+      url: "https://blog.csdn.net/m0_74353785?spm=1000.2115.3001.5343"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/Ender2002hub"
+
 
 defaults:
   # _posts
