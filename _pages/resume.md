@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 个人简历
-permalink: /resume/
+permalink: /
 author_profile: true   # 左侧显示头像与社交链接（来自 _config.yml 的 author）
 toc: true              # 右侧目录（可选）
 toc_sticky: true
