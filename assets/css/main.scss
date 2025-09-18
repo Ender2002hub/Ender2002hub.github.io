@@ -21,17 +21,17 @@
 }
 
 /* 段落与列表的字号与间距统一，避免不同块看起来大小不一 */
-.resume-page .page__content p  { font-size: 0.95rem; margin: 0.4em 0; }
-.resume-page .page__content li { font-size: 0.95rem; margin: 0.2em 0; }
+.resume-page .page__content p  { font-size: 0.85rem; margin: 0.4em 0; }
+.resume-page .page__content li { font-size: 0.85rem; margin: 0.2em 0; }
 
 /* ----------------------------------------------------------------------
    标题层级（##/###/####）
    - 统一为更紧凑的视觉梯度
    - 如需更小/更大，微调 rem 数值即可
    ---------------------------------------------------------------------- */
-.resume-page .page__content h1 { font-size: 1.35rem; font-weight: 700; }
-.resume-page .page__content h2 { font-size: 1.15rem; font-weight: 700; }
-.resume-page .page__content h3 { font-size: 1.05rem; font-weight: 700; }
+.resume-page .page__content h1 { font-size: 1.00rem; font-weight: 700; }
+.resume-page .page__content h2 { font-size: 1.00rem; font-weight: 700; }
+.resume-page .page__content h3 { font-size: 1.00rem; font-weight: 700; }
 .resume-page .page__content h4 { font-size: 1.00rem; font-weight: 700; }
 
 /* 引导段落 .lead（主题会放大），这里强行与正文一致，避免忽大忽小 */
@@ -40,22 +40,22 @@
 /* ----------------------------------------------------------------------
    引用、表格、代码块的字号微调，保证整体一致
    ---------------------------------------------------------------------- */
-.resume-page blockquote { font-size: 0.95rem; }
+.resume-page blockquote { font-size: 0.85rem; }
 .resume-page .page__content table td,
-.resume-page .page__content table th { font-size: 0.93rem; }
+.resume-page .page__content table th { font-size: 0.83rem; }
 .resume-page .page__content code,
-.resume-page .page__content pre   { font-size: 0.9rem; line-height: 1.6; }
+.resume-page .page__content pre   { font-size: 0.8rem; line-height: 1.6; }
 
 /* ----------------------------------------------------------------------
    目录（TOC）区域：标题与链接字号稍微变小，避免抢主视觉
    ---------------------------------------------------------------------- */
-.resume-page .toc .nav__title  { font-size: 0.9rem; }
-.resume-page .toc .toc__menu a { font-size: 0.9rem; }
+.resume-page .toc .nav__title  { font-size: 0.8rem; }
+.resume-page .toc .toc__menu a { font-size: 0.8rem; }
 
 /* ----------------------------------------------------------------------
    左侧作者信息卡（头像、姓名、简介、链接）字号微调
    ---------------------------------------------------------------------- */
-.resume-page .author__name    { font-size: 1.05rem; }  /* 姓名 */
+.resume-page .author__name    { font-size: 1.0rem; }  /* 姓名 */
 .resume-page .author__bio     { font-size: 0.95rem; }  /* 简介 */
 .resume-page .author__urls a  { font-size: 0.9rem;  }  /* 链接列表 */
 
@@ -72,7 +72,7 @@
    更细粒度的按需工具类（在 Markdown 标题/段落后加 {:.类名} 使用）
    示例：## 教育背景 {:.fz-94}
    ---------------------------------------------------------------------- */
-.resume-page .fz-90 { font-size: 0.90rem; }
-.resume-page .fz-94 { font-size: 0.94rem; }
-.resume-page .fz-100 { font-size: 1.00rem; }
+.resume-page .fz-90 { font-size: 0.80rem; }
+.resume-page .fz-94 { font-size: 0.84rem; }
+.resume-page .fz-100 { font-size: 0.90rem; }
 .resume-page .tight li { margin: .15em 0; }  /* 列表更紧凑 */
