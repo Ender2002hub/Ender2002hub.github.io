@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
   <span class="tag orange">产品设计</span>
   <span class="tag red">知识图谱</span>
   <span class="tag sky">自动标注</span>
-  <!-- <span class="tag emerald">机器学习</span>
-  <span class="tag violet">数据挖掘</span>
+  <span class="tag emerald">软件设计</span>
+  <!-- <span class="tag violet">数据挖掘</span>
   <span class="tag fuchsia">NLP</span>
   <span class="tag rose">图学习</span>
   <span class="tag slate">Linux</span>
