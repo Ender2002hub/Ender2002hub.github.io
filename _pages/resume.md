@@ -48,7 +48,19 @@ document.addEventListener('DOMContentLoaded', function () {
 - 出生：2002-12
 - 手机：180-0754-0254
 - 邮箱：wubx36@mail2.sysu.edu.cn（学邮） | 2120193209@qq.com
-- 就读：中山大学 · 遥感科学与技术学院（本科）
+- 就读：中山大学 · 遥感科学与技术学院（本硕）
+  
+---
+
+<div class="tags">
+  <span class="tag blue">深度学习</span>
+  <span class="tag indigo">Python</span>
+  <span class="tag purple">PyTorch</span>
+  <span class="tag teal">遥感</span>
+  <span class="tag green">GIS</span>
+  <span class="tag orange">产品设计</span>
+  <span class="tag red">A/B Test</span>
+</div>
 
 ---
 
