@@ -96,7 +96,7 @@
 .resume-page .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem .6rem;         /* 行/列间距 */
+  gap: .35rem .45rem;         /* 行/列间距 */
   margin: .5rem 0 1rem;
 }
 
@@ -110,10 +110,10 @@
   background: var(--tag-bg);            /* 同色高透明底 */
   border: 1.5px solid currentColor;     /* 同色描边 */
   border-radius: 999px;                 /* 超大圆角=胶囊 */
-  padding: .28rem .7rem;
+  padding: .20rem .5rem;
   font-weight: 700;
-  letter-spacing: .02em;
-  font-size: .9rem;
+  letter-spacing: .015em;
+  font-size: .8rem;
   line-height: 1;
   display: inline-flex;
   align-items: center;
