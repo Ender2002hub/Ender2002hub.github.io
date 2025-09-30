@@ -92,15 +92,15 @@
 }
 
 
-/* ========== 只作用于简历页（classes: resume-page）========== */
-.resume-page .tags {
+/* ========== 作用于所有页面========== */
+ .tags {
   display: flex;
   flex-wrap: wrap;
   gap: .35rem .45rem;         /* 行/列间距 */
   margin: .5rem 0 1rem;
 }
 
-.resume-page .tag {
+ .tag {
   /* 颜色变量：默认蓝色，具体色值可由类或 inline style 覆盖 */
   --tag-color: #3b82f6;     /* Tailwind blue-500 */
   /* 半透明底色：同色 12% 混合透明 */
@@ -138,10 +138,10 @@
 
 /* 移动端稍微小一点 */
 @media (max-width: 600px){
-  .resume-page .tag { font-size:.85rem; padding:.24rem .55rem; }
+  .tag { font-size:.85rem; padding:.24rem .55rem; }
 }
 
 /* 兼容：若浏览器不支持 color-mix，用不透明度兜底 */
 @supports not (background: color-mix(in srgb, red 10%, transparent)) {
-  .resume-page .tag { background-color: rgba(59,130,246,.12); } /* blue-500 的兜底 */
+  .tag { background-color: rgba(59,130,246,.12); } /* blue-500 的兜底 */
 }
