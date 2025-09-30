@@ -5,16 +5,11 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* ----------------------------------------------------------------------
-   仅影响“简历页”正文的基础排版
-   - 将正文字号略微缩小到 ~15.2px（0.95rem）
-   - 提升行高，增强可读性
-   - 如需再小：把 0.95rem 改为 0.9rem；恢复默认：改为 1rem
-   ---------------------------------------------------------------------- */
+
 .resume-page .page__content {
-  font-size: 0.95rem;     /* 正文基准字号（默认≈16px，这里稍小） */
+  font-size: 0.95rem;     /* 正文基准字号 */
   line-height: 1.7;       /* 行高更舒服 */
-  /* 可选：统一中英文字体，减少视觉大小不一致（需要再统一可取消注释）
+  /* 可选：统一中英文字体，减少视觉大小不一致
   font-family: "Noto Sans SC","PingFang SC","Microsoft YaHei",
                system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   */
@@ -96,3 +91,57 @@
   .resume-page .resume-hero{ height: 300px; }
 }
 
+
+/* ========== 只作用于简历页（classes: resume-page）========== */
+.resume-page .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .6rem;         /* 行/列间距 */
+  margin: .5rem 0 1rem;
+}
+
+.resume-page .tag {
+  /* 颜色变量：默认蓝色，具体色值可由类或 inline style 覆盖 */
+  --tag-color: #3b82f6;     /* Tailwind blue-500 */
+  /* 半透明底色：同色 12% 混合透明 */
+  --tag-bg: color-mix(in srgb, var(--tag-color) 12%, transparent);
+
+  color: var(--tag-color);               /* 同色不透明文字 */
+  background: var(--tag-bg);            /* 同色高透明底 */
+  border: 1.5px solid currentColor;     /* 同色描边 */
+  border-radius: 999px;                 /* 超大圆角=胶囊 */
+  padding: .28rem .7rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  font-size: .9rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  white-space: nowrap;
+  backdrop-filter: saturate(120%) blur(1px); /* 微玻璃质感，可删 */
+}
+
+/* —— 颜色预设（任选其一） —— */
+.resume-page .tag.blue   { --tag-color:#3b82f6; } /* 蓝 */
+.resume-page .tag.indigo { --tag-color:#6366f1; } /* 靛 */
+.resume-page .tag.purple { --tag-color:#a855f7; } /* 紫 */
+.resume-page .tag.pink   { --tag-color:#ec4899; } /* 粉 */
+.resume-page .tag.red    { --tag-color:#ef4444; } /* 红 */
+.resume-page .tag.orange { --tag-color:#f59e0b; } /* 橙 */
+.resume-page .tag.yellow { --tag-color:#eab308; } /* 黄 */
+.resume-page .tag.lime   { --tag-color:#84cc16; } /* 青柠 */
+.resume-page .tag.green  { --tag-color:#22c55e; } /* 绿 */
+.resume-page .tag.teal   { --tag-color:#14b8a6; } /* 蓝绿 */
+.resume-page .tag.cyan   { --tag-color:#06b6d4; } /* 青 */
+.resume-page .tag.gray   { --tag-color:#6b7280; } /* 灰 */
+
+/* 移动端稍微小一点 */
+@media (max-width: 600px){
+  .resume-page .tag { font-size:.85rem; padding:.24rem .55rem; }
+}
+
+/* 兼容：若浏览器不支持 color-mix，用不透明度兜底 */
+@supports not (background: color-mix(in srgb, red 10%, transparent)) {
+  .resume-page .tag { background-color: rgba(59,130,246,.12); } /* blue-500 的兜底 */
+}
