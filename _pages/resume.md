@@ -55,11 +55,18 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="tags">
   <span class="tag blue">深度学习</span>
   <span class="tag indigo">Python</span>
-  <span class="tag purple">PyTorch</span>
-  <span class="tag teal">遥感</span>
+  <span class="tag purple">LLM</span>
+  <span class="tag teal">数据分析</span>
   <span class="tag green">GIS</span>
   <span class="tag orange">产品设计</span>
-  <span class="tag red">A/B Test</span>
+  <span class="tag red">知识图谱</span>
+  <span class="tag sky">自动标注</span>
+  <!-- <span class="tag emerald">机器学习</span>
+  <span class="tag violet">数据挖掘</span>
+  <span class="tag fuchsia">NLP</span>
+  <span class="tag rose">图学习</span>
+  <span class="tag slate">Linux</span>
+  <span class="tag coffee">产品思维</span> -->
 </div>
 
 ---
