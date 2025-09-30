@@ -1,9 +1,9 @@
 main:
   - title: "主页"
     url: /
-  # - title: "科研"
-  #   url: /categories/
-  # - title: "实习"
-  #   url: /tags/
-  # - title: "个人"
-  #   url: /about/
+  - title: "科研"
+    url: /categories/
+  - title: "产品"
+    url: /tags/
+  - title: "技术"
+    url: /about/
