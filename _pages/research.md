@@ -43,8 +43,6 @@ feature_row2:
     btn_class: btn
 ---
 
-> 专注 **遥感 × AI**：场景理解、关系建模与检索、航线规划与可视化、数据产品工程化。
-
 ### 研究兴趣
 <div class="tags">
   <span class="tag teal">自动标注算法</span>
@@ -59,7 +57,8 @@ feature_row2:
 ---
 
 ## 主要项目
-{% include feature_row %}
+{% include feature_row id="feature_row1" %}
+{% include feature_row id="feature_row2" %}
 
 [查看「其他项目」]({{ '/other_projects/' | relative_url }}){: .btn .btn--primary }
 
