@@ -1,0 +1,59 @@
+---
+layout: single
+title: 技术 · Tech
+permalink: /tech/
+author_profile: true
+toc: true
+toc_sticky: true
+classes: tech-page
+---
+
+> 技术栈、工具链、工程实践与常用片段。
+
+## 技能矩阵
+### 编程 / 框架
+<div class="tags">
+  <span class="tag indigo">Python</span>
+  <span class="tag purple">PyTorch</span>
+  <span class="tag blue">OpenCV</span>
+  <span class="tag teal">GDAL</span>
+  <span class="tag green">SQL</span>
+  <span class="tag sky">Java</span>
+  <span class="tag cyan">C/C++</span>
+</div>
+
+### 遥感 / GIS / 可视化
+<div class="tags">
+  <span class="tag green">ArcGIS</span>
+  <span class="tag teal">QGIS</span>
+  <span class="tag gray">ENVI</span>
+  <span class="tag orange">可视化</span>
+</div>
+
+### 工程 / 产品
+<div class="tags">
+  <span class="tag slate">Git</span>
+  <span class="tag orange">A/B Test</span>
+  <span class="tag emerald">需求分析</span>
+  <span class="tag brown">产品设计</span>
+</div>
+
+---
+
+## 实战清单
+- 数据处理流水线：`DVC + Makefile + Conda`  
+- 模型训练：多卡/断点续训/日志管理（`tensorboard` or `wandb`）  
+- 部署：`FastAPI`/`Flask` + `uvicorn` + 容器化（Docker）  
+- 可视化：`ECharts`/`Deck.gl`/`Leaflet`/`Kepler.gl`
+
+---
+
+## 常用片段（示例）
+```python
+# 统一随机种子
+import os, random, numpy as np, torch
+def seed_everything(seed=42):
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    random.seed(seed); np.random.seed(seed)
+    torch.manual_seed(seed); torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
