@@ -13,34 +13,26 @@ feature_row1:
     alt: GeoSceneGraph Annotator
     title: GeoSceneGraph Annotator
     excerpt: "遥感场景“对象-关系”三元组标注工具，标准化流程与质检闭环，支持组合式检索验证。"
-    url: https://github.com/YourRepoOrPage
-    btn_label: 了解更多
-    btn_class: btn--primary
+    url: /GSGA/
 
   - image_path: /assets/images/projects/arctic-route.png
     alt: 冰区航线规划系统
     title: 北极航线规划系统
     excerpt: "面向航运企业/科研机构的冰区航路规划、可视化与交互系统，支持软著与落地试点。"
-    url: /product/     # 或你的仓库/说明文档链接
-    btn_label: 了解更多
-    btn_class: btn--primary
-
+    url: /arctic——route/    
+  
 feature_row2:
   - image_path: /assets/images/projects/streetview-mapping.png
     alt: 街景纹理映射
     title: 城市建筑纹理映射
     excerpt: "“侧视街景+顶视卫星”多源融合，天际线配准与纹理映射，面向规划/可视化/漫游。"
-    url: /research/#城市建筑纹理映射
-    btn_label: 了解更多
-    btn_class: btn
-
+    url: /3D/
+  
   - image_path: /assets/images/projects/streetview-mapping.png
     alt: 街景纹理映射
     title: 城市建筑纹理映射
     excerpt: "“侧视街景+顶视卫星”多源融合，天际线配准与纹理映射，面向规划/可视化/漫游。"
-    url: /research/#城市建筑纹理映射
-    btn_label: 了解更多
-    btn_class: btn
+    url: /APP/
 ---
 
 ### 研究兴趣
