@@ -1,0 +1,53 @@
+---
+layout: single
+title: 其他项目 · Other Projects
+permalink: /others/
+author_profile: true
+toc: true
+toc_sticky: true
+classes: others-page
+
+# 可选：用 feature_row 做卡片式展示
+feature_row:
+  - image_path: /assets/images/projects/demo-a.png
+    alt: Demo A
+    title: Demo A
+    excerpt: 简要说明这个项目的目标、技术栈或成果。
+    url: https://github.com/your/repo-a
+    btn_label: GitHub
+    btn_class: btn--primary
+  - image_path: /assets/images/projects/demo-b.png
+    alt: Demo B
+    title: Demo B
+    excerpt: 一句话亮点或数据指标。
+    url: https://your-site/demo-b
+    btn_label: 查看
+    btn_class: btn--primary
+---
+
+> 这里是我在课程、竞赛、兴趣驱动下完成的**其它类型项目**，持续补充中。
+
+## 项目速览
+{% include feature_row %}
+
+---
+
+## 清单（按主题）
+### 计算机视觉 / 深度学习
+- **项目名称 1** — 简要一句话；[GitHub](https://github.com/...) · [文档](/assets/docs/proj1.pdf){: .btn }
+- **项目名称 2** — 简要一句话；[演示](https://...) · [海报](/assets/posters/proj2.pdf){: .btn }
+
+### 数据/工具/脚本
+- **小工具 A** — 一句话说明用途；`Python · CLI`
+- **可视化 B** — 使用 `ECharts/Leaflet/Deck.gl`，可与 GIS 数据联动
+
+---
+
+## 标签
+<div class="tags">
+  <span class="tag blue">Python</span>
+  <span class="tag purple">CV</span>
+  <span class="tag teal">遥感</span>
+  <span class="tag green">GIS</span>
+  <span class="tag orange">可视化</span>
+</div>
