@@ -1,0 +1,67 @@
+---
+layout: single
+title: 产品 · Product
+permalink: /product/
+author_profile: true
+toc: true
+toc_sticky: true
+classes: product-page
+
+feature_row:
+  - image_path: /assets/images/products/annotator-card.png
+    alt: 标注工具
+    title: GeoSceneGraph Annotator
+    excerpt: 从“采集—标注—质检—导出—检索验证”的一站式标注平台。准确率 97%+，规模化生产可用。
+    url: #use-cases
+    btn_label: 应用案例
+    btn_class: btn--primary
+  - image_path: /assets/images/products/route-card.png
+    alt: 航线规划
+    title: 北极航线规划系统
+    excerpt: 多尺度路径规划、可视化与交互；已有试点验证与软著。支持企业落地与二次开发。
+    url: #pricing
+    btn_label: 获取与部署
+    btn_class: btn--primary
+---
+
+> 面向真实业务场景，把科研能力转化为**可交付的产品**与**稳定的工程**。
+
+### 能力标签
+<div class="tags">
+  <span class="tag blue">需求分析</span>
+  <span class="tag teal">系统架构</span>
+  <span class="tag green">数据闭环</span>
+  <span class="tag purple">模型部署</span>
+  <span class="tag indigo">可视化交互</span>
+  <span class="tag orange">A/B Test</span>
+</div>
+
+---
+
+## 产品总览
+{% include feature_row %}
+
+---
+
+## 场景与案例 {#use-cases}
+### 标注与检索闭环
+- 标注效率：**+X%**；错误率：**-Y%**  
+- 组合检索：**毫秒级**返回；支持对象-关系图式查询
+
+### 航线规划
+- 多目标：安全/效率/燃油/冰情  
+- 交互：实时路径编辑、风浪/海冰层叠
+
+---
+
+## 路线图 & 版本
+- **v1.0**：核心功能、导出接口、文档  
+- **v1.1**：质检模块细化、可视化增强  
+- **v2.0**：插件化架构、第三方算法接入
+
+---
+
+## 获取与部署 {#pricing}
+- 个人/学术：开源基础版或学术授权  
+- 企业：按模块授权，支持私有化部署与二开  
+[联系我](/about/){: .btn .btn--primary }  [下载手册](/assets/docs/product.pdf){: .btn }
