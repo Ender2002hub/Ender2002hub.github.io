@@ -2,8 +2,8 @@ main:
   - title: "主页"
     url: /
   - title: "科研"
-    url: /categories/
+    url: /research/
   - title: "产品"
-    url: /tags/
+    url: /products/
   - title: "技术"
-    url: /about/
+    url: /tech/
