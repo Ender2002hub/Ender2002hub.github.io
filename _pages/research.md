@@ -43,8 +43,6 @@ feature_row2:
     btn_class: btn
 ---
 
-> 专注 **遥感 × AI**：场景理解、关系建模与检索、航线规划与可视化、数据产品工程化。
-
 ### 研究兴趣
 <div class="tags">
   <span class="tag teal">自动标注算法</span>
